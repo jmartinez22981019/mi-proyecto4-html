@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="imagen/x-icon">
+    <title>EL PROFE JM</title>
+    <style>
+        body {
+            font-family: "Neuropol X", "Courier New", monospace;
+            background: linear-gradient(to right, rgb(15, 109, 231), rgb(9, 236, 248));
+            padding: 0;
+            margin: 0;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+        }
+
+        header {
+            text-align: center;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        li {
+            float: left;
+        }
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover:not(.active) {
+            background-color: #111;
+        }
+
+        .active {
+            background-color: #04AA6D;
+        }
+
+        h1 {
+            background-color: black;
+            padding: 10px;
+            margin: 0;
+            color: #92a4ff;
+        }
+
+        table {
+            border-collapse: collapse;
+            border: 2px solid rgb(200, 200, 200);
+            letter-spacing: 1px;
+            font-size: 1 rem;
+            font: 1em arial;
+            background-color: #FFF;
+        }
+
+        td {
+            border: 1px solid rgb(190, 190, 190);
+            padding: 10px 20px;
+        }
+
+        th {
+            border: 1px solid rgb(190, 190, 190);
+            padding: 10px 20px;
+            background-color: rgb(162, 162, 162);
+        }
+
+        .footer {
+            background-color: #333;
+            color: #FFF;
+            padding: 10px;
+            text-align: center;
+            clear: both;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1 style="color: #02FFFC;">EL PROFE JM</h1>
+        <nav>
+            <ul>
+                <li><a href="Index.html">Home</a></li>
+                <li><a href="Contenido.html">Contenido</a></li>
+                <li><a href="Audiovisuales.html">Audiovisuales</a></li>
+                <li><a class="active" href="Resumen.html">Resumen</a></li>
+                <li> <a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+
+    </header>
+    <h2 style="margin: 10px; color: #FFF;" style="font-family: Neuropol X;">Conceptos Básicos</h2>
+    <hr>
+    <div class="container">
+        <table>
+            <colgroup>
+                <col style="background-color: aqua;">
+            </colgroup>
+            <th style="font-family: Neuropol X;">Concepto</th>
+            <th style="font-family: Neuropol X;">Descripción</th>
+            <th style="font-family: Neuropol X;">Ejemplo</th>
+
+            <tr>
+                <td>Monomios</td>
+                <td>Un monomio es un polinomio de grado 1. Se escribe como a<sub>n</sub>X<sup>n</sup>,<br>
+                    donde a<sub>n</sub> es un número <b>Real</b> o <b>Complejo</b>.</td>
+                <td>3X<sup>2</sup></td>
+
+            </tr>
+            <tr>
+                <td>Polinomios</td>
+                <td>Un polinomio es una expresión algebraica de la forma <br>
+                    P(X)= a<sub>n</sub>X<sup>n</sup> + a<sub>n-1</sub>X<sup>n-1</sup> +...+ a<sub>2</sub>X<sup>2</sup> +
+                    a<sub>0</sub> X + a<sub>n</sub>, donde a<sub>0</sub>,a<sub>1</sub>,...,a<sub>n</sub>,
+                    <br>son números Reales o Complejos y n es un número <b>Natural</b> no negativo.
+                </td>
+                <td>P(X)= 2X<sup>3</sup> + 3X<sup>2</sup> - 5X + 1</td>
+            </tr>
+            <tr>
+                <td>Grado de un polinomio</td>
+                <td>El grado de un polinomio es el mayor exponente de X <br> que aparece en el polinomio.</td>
+                <td>El grado de P(X)= 2X<sup>3</sup> + 3X<sup>2</sup> - 5X + 1, es 3.</td>
+            </tr>
+
+            <tr>
+                <td>Operaciones con polinomios</td>
+                <td>Los polinomios se pueden sumar, restar, multiplicar y dividir <br>de la misma manera que los números
+                    Reales.</td>
+                <td>(X<sup>2</sup> + 2X - 1) + (x<sup>2</sup> - 3X + 2)= 2X<sup>2</sup>- X + 3</td>
+            </tr>
+            <tr>
+                <td>Factorización de polinomios</td>
+                <td>La factorización de polinomios es el proceso de descomponer <br>un polinomio
+                    en un producto de polinomios más simples.</td>
+                <td>X<sup>2</sup> + 2X - 1= (X - 1)(X + 1)</td>
+            </tr>
+            <tr>
+                <td>Raíces de un polinomio</td>
+                <td>Una raíz de un polinomio es un valor de X que hace que <br> el polinomio sea igual a cero.</td>
+                <td> Las raíces del polinomio <br> P(X)= 2X<sup>3</sup> + 3X<sup>2</sup> - 5X + 1 <br> son: X= -1, X= 21
+                    y X=
+                    41.</td>
+            </tr>
+        </table>
+    </div>
+    <br>
+    <hr color="aqua" size="1px">
+    <center><video class="centrado" autoplay src="assets/videos/Mi video1.mp4" controls width="360" controls loop
+            muted></video>
+    </center>
+    <br>
+    <center>
+        <article>
+            <h4 style="color: #FFF;">Visita mi canal de Youtube:</h4>
+            <a href="https://www.youtube.com/embed/OwPdK1Ss__c" target="_blank" title="YouTube video player"
+                frameborder="0" allow="accelerometer; autoplay; 
+        clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen><img
+                    src="assets/imagenes/yt94.png"></a>
+        </article>
+    </center>
+    <footer class="footer">
+        <h3>
+            <img src="assets/imagenes/lma2.png" width="60px" alt="">
+            <p>Derechos Reservados &copy;2023</p>
+        </h3>
+    </footer>
+</body>
+
+</html>
